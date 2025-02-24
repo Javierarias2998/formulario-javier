@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: linear-gradient(to right, rgb(13, 22, 11), rgb(22, 11, 11));
+            color: #1a62e7;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #ebf706;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        h2 {
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h2>📘 Guía Empresarial - Registro de Empresa 📘</h2>
+    <form action="#" method="post">
+        <label for="nombre">🏢 Nombre de la Empresa:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="cif">📄 CIF:</label>
+        <input type="text" id="cif" name="cif" pattern="[0-9]{8}[A-Za-z]" maxlength="9" required>
+
+        <label for="telefono">📞 Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" maxlength="9" required>
+
+        <label for="descripcion">📝 Descripción de la Empresa:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+        <button type="submit">✅ Enviar</button>
+    </form>
+</body>
+</html>
+
